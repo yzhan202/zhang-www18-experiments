@@ -1,0 +1,4 @@
+Area under positive-class PR curve: 0.7004994879759107
+Area under negative-class PR curve: 0.9406048498433859
+Area under ROC curve: 0.8636363636363639
+Kendall's: 0.5758551307847082

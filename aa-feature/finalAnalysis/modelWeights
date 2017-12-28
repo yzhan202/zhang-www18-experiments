@@ -1,0 +1,173 @@
+0.139067	 LOCALRECOVERS(U) >> RECOVERS(U) {squared}
+0.276860	 ~( LOCALRECOVERS(U) ) >> ~( RECOVERS(U) ) {squared}
+
+0.105905	 ( SIMILAR(U1, U2) & RECOVERS(U2) ) >> RECOVERS(U1) {squared}
+0.021582	 ( SIMILAR(U1, U2) & RECOVERS(U1) ) >> RECOVERS(U2) {squared}
+0.021582	 ( SIMILAR(U1, U2) & ~( RECOVERS(U2) ) ) >> ~( RECOVERS(U1) ) {squared}
+0.105905	 ( SIMILAR(U1, U2) & ~( RECOVERS(U1) ) ) >> ~( RECOVERS(U2) ) {squared}
+
+0.245827	 TOPICS(U, '0') >> ~( RECOVERS(U) ) {squared}
+0.497268	 TOPICS(U, '1') >> RECOVERS(U) {squared}
+
+
+
+3.543083	 ( CONTAINSALCOHOLWORD(U, I, 'drunk') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.478278	 ( ~( USESALCOHOLWORD(U, 'drunk') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+1.580317	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'drunk') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+1.386791	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'drunk') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.222108	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'drunk') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.176209	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'drunk') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+4.043513	 ( CONTAINSALCOHOLWORD(U, I, 'beer') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.307157	 ( ~( USESALCOHOLWORD(U, 'beer') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.267124	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'beer') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.544103	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'beer') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+1.931026	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'beer') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+1.939069	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'beer') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+2.113796	 ( CONTAINSALCOHOLWORD(U, I, 'wine') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.319251	 ( ~( USESALCOHOLWORD(U, 'wine') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.119343	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'wine') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.148281	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'wine') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.430314	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'wine') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.193698	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'wine') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+1.641736	 ( CONTAINSALCOHOLWORD(U, I, 'alcohol') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.195470	 ( ~( USESALCOHOLWORD(U, 'alcohol') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+1.578498	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'alcohol') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.189655	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'alcohol') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+1.500652	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'alcohol') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.178150	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'alcohol') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+4.283775	 ( CONTAINSALCOHOLWORD(U, I, 'hungover') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.311882	 ( ~( USESALCOHOLWORD(U, 'hungover') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.347765	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'hungover') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.347765	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'hungover') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.054291	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'hungover') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.005353	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'hungover') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+2.909151	 ( CONTAINSALCOHOLWORD(U, I, 'hangover') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.295531	 ( ~( USESALCOHOLWORD(U, 'hangover') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.000000	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'hangover') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'hangover') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.000000	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'hangover') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+4.601260	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'hangover') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+5.386640	 ( CONTAINSALCOHOLWORD(U, I, 'turnt') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.450273	 ( ~( USESALCOHOLWORD(U, 'turnt') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.511118	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'turnt') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'turnt') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.315417	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'turnt') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.432503	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'turnt') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+4.504075	 ( CONTAINSALCOHOLWORD(U, I, 'vodka') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.373168	 ( ~( USESALCOHOLWORD(U, 'vodka') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.068409	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'vodka') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.072269	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'vodka') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.385203	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'vodka') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.387474	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'vodka') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+2.801361	 ( CONTAINSALCOHOLWORD(U, I, 'liquor') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.293241	 ( ~( USESALCOHOLWORD(U, 'liquor') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.488596	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'liquor') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.196807	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'liquor') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.307334	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'liquor') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.215653	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'liquor') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+3.863393	 ( CONTAINSALCOHOLWORD(U, I, 'whiskey') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.334476	 ( ~( USESALCOHOLWORD(U, 'whiskey') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.000000	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'whiskey') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'whiskey') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.177203	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'whiskey') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.357942	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'whiskey') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+2.692573	 ( CONTAINSALCOHOLWORD(U, I, 'tequila') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.307471	 ( ~( USESALCOHOLWORD(U, 'tequila') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.000000	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'tequila') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'tequila') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.465624	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'tequila') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.496423	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'tequila') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+1.556152	 ( CONTAINSALCOHOLWORD(U, I, 'alcoholic') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.256811	 ( ~( USESALCOHOLWORD(U, 'alcoholic') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.000000	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'alcoholic') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'alcoholic') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+3.303880	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'alcoholic') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.896605	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'alcoholic') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+6.043318	 ( CONTAINSALCOHOLWORD(U, I, 'champagne') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.417353	 ( ~( USESALCOHOLWORD(U, 'champagne') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.083728	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'champagne') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'champagne') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.000000	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'champagne') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'champagne') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+2.849683	 ( CONTAINSALCOHOLWORD(U, I, 'bar') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.231408	 ( ~( USESALCOHOLWORD(U, 'bar') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.360838	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'bar') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.211287	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'bar') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.084440	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'bar') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.154292	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'bar') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+3.105754	 ( CONTAINSALCOHOLWORD(U, I, 'wasted') & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.313007	 ( ~( USESALCOHOLWORD(U, 'wasted') ) & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+3.615729	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'wasted') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'wasted') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.159448	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'wasted') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+2.040520	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I2) ) & CONTAINSALCOHOLWORD(U1, I2, 'wasted') ) & ATTENDSAA(U2) ) >> ~( RECOVERS(U2) ) {squared}
+
+
+
+
+0.051992	 ( CONTAINSSOBERWORD(U, I, '#recovery') & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.062783	 ( ~( USESSOBERWORD(U, '#recovery') ) & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+2.000000	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSSOBERWORD(U1, I2, '#recovery') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+1.604086	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I) ) & CONTAINSSOBERWORD(U1, I, '#recovery') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSSOBERWORD(U1, I2, '#recovery') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I) ) & CONTAINSSOBERWORD(U1, I, '#recovery') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+
+
+2.474314	 ( CONTAINSSOBERWORD(U, I, 'sober') & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+3.992554	 ( ~( USESSOBERWORD(U, 'sober') ) & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.160134	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSSOBERWORD(U1, I2, 'sober') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+0.552054	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I) ) & CONTAINSSOBERWORD(U1, I, 'sober') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+0.158345	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSSOBERWORD(U1, I2, 'sober') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+0.311931	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I) ) & CONTAINSSOBERWORD(U1, I, 'sober') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+
+
+2.526681	 ( CONTAINSSOBERWORD(U, I, 'sobriety') & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.459790	 ( ~( USESSOBERWORD(U, 'sobriety') ) & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.001605	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSSOBERWORD(U1, I2, 'sobriety') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+1.564674	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I) ) & CONTAINSSOBERWORD(U1, I, 'sobriety') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSSOBERWORD(U1, I2, 'sobriety') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+4.121999	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I) ) & CONTAINSSOBERWORD(U1, I, 'sobriety') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+
+
+0.639042	 ( CONTAINSSOBERWORD(U, I, 'recovery') & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.071791	 ( ~( USESSOBERWORD(U, 'recovery') ) & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+0.000320	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSSOBERWORD(U1, I2, 'recovery') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+1.678486	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I) ) & CONTAINSSOBERWORD(U1, I, 'recovery') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSSOBERWORD(U1, I2, 'recovery') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I) ) & CONTAINSSOBERWORD(U1, I, 'recovery') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+
+
+2.529249	 ( CONTAINSSOBERWORD(U, I, '#sobriety') & ATTENDSAA(U) ) >> RECOVERS(U) {squared}
+2.150189	 ( ~( USESSOBERWORD(U, '#sobriety') ) & ATTENDSAA(U) ) >> ~( RECOVERS(U) ) {squared}
+2.000000	 ( ( ( REPLIES(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSSOBERWORD(U1, I2, '#sobriety') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+1.604086	 ( ( ( REPLIES(U2, U1, I1) & REPLIES(U1, U2, I) ) & CONTAINSSOBERWORD(U1, I, '#sobriety') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & RETWEETS(U1, U2, I2) ) & CONTAINSSOBERWORD(U1, I2, '#sobriety') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
+2.000000	 ( ( ( RETWEETS(U2, U1, I1) & REPLIES(U1, U2, I) ) & CONTAINSSOBERWORD(U1, I, '#sobriety') ) & ATTENDSAA(U2) ) >> RECOVERS(U2) {squared}
