@@ -9,7 +9,7 @@ This code includes two parts. 'aa-feature' includes code for extracting linguist
 Linguistic Features: include Term Frequency, Alcohol/Sober Word Usage, Topic Distribution from Seeded Topic Modeling, Sentiment Scores.
 
 Psycho-linguistic Features: we extract psycho-linguistic
-features using LIWC[Linguistic Enquiry Word Count (LIWC). https://liwc.wpengine.com/]
+features using LIWC[Linguistic Enquiry Word Count (LIWC). https://liwc.wpengine.com/]. Here we use affect and social categories.
 
 Structural Features: Friends, Replies, Retweets, Similarity.
 
@@ -18,7 +18,7 @@ Structural Features: Friends, Replies, Retweets, Similarity.
 'aa-feature/recover-1year' includes code for extracting features in 1 year period.
 
 
-'PSL-aa' includes variations HL-MRF recovery prediction models. All these models are based on the Probabilistic Soft Logic framework[http://psl.linqs.org/]. Here we use affect and social categories.
+'PSL-aa' includes variations HL-MRF recovery prediction models. All these models are based on the Probabilistic Soft Logic framework[http://psl.linqs.org/]. 
 
 PSL-Recovery-All: uses all the features.
 
